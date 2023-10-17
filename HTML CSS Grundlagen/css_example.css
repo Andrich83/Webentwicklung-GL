@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(134, 129, 129);
+}
+
+ul {
+    list-style-type: none;
+    padding: 8px;
+    margin-top: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(76, 16, 16);
+    transition: all 3s;
+
+
+}
+
+a:hover {
+    color: aqua;
+    font-weight: 900;
+    font-size:  5em;
+    transition: all 3s;
+}
+
+#first-link::before {
+    content: 🍄;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
