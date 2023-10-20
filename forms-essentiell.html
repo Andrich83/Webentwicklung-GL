@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method="post" action="https://pfad-zum-server.com/formvalidation">
+        <label for="vorname">Vorname</label>
+        <input required name="vorname" id="vorname" type="text">
+        <br>
+        <label for="nachname">Nachname</label>
+        <input name="nachname" id="nachname" type="text">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="email">EMail</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="date">Geburtsdatum</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="tel">Telefon</label>
+        <input type="tel" name="tel" id="tel">
+
+        <div>
+            <label for="html">HTML</label>
+            <input type="radio" name="fav_language" id="html" value="html">
+            <br>
+            <label for="css">CSS</label>
+            <input checked type="radio" name="fav_language" id="css" value="css">
+            <br>
+            <label for="js">JS</label>
+            <input type="radio" name="fav_language" id="js" value="js">
+            <br>
+            <br>
+            <button type="submit">Abschicken</button>
+            <button type="reset">Zurücksetzen</button>
+        </form>
+        </div>
+    </form>
+</body>
+</html>

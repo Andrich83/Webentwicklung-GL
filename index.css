@@ -6,6 +6,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*Background Image*/
+    background-image: url('assets/Spirale.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Cormorant Garamond', serif;
+    
+}
+
+#clock {
+    font-size: 2rem;
+    color: aliceblue;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 5px 5px 5px #575b7d;
 }
 
 .container {
@@ -21,6 +36,8 @@ body {
     border-radius: 0.7em;
     background-color: rgba(0,0,0,.6);
     padding: 10px;
+    width: 20vw;
+    min-width: 180px;
 }
 
 .box > h2 {
@@ -33,21 +50,20 @@ body {
     padding: 0;
 }
 
-.box >ul > li > a {
-    color: #c0c0c0;
-    text-decoration: none;
-}
+
+
 
 a {
     text-decoration: none;
-    color: rgb(76, 16, 16);
-    transition: all 3s;
+    color: rgb(243, 237, 237);
+    transition: all 2s;
 
 
 }
 
 a:hover {
-    color: aqua;
+    color: rgb(53, 195, 214);
     font-weight: 500;
-    font-size:  2em;
-    transition: all 2s;
+    font-size:  1.5em;
+    transition: all 1.5s;
+}

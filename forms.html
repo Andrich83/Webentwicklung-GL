@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+</head>
+<body>
+    <h1>Formular</h1>
+    <form action="/results" method="post" action="Link zum Server/Formvalidation">
+        <label for="vorname">Vorname</label>
+        <input name="vorname" id="vorname" type="text"> 
+        <br>
+        <label for="nachname">Nachname</label>
+        <input name="nachname" id="nachname" type="text"> 
+        <br>
+        <label for="email">EMail</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <label for="tel">Telefon/label>
+        <input type="tel name="tel" id="tel">
+
+        <div>
+            <label for="html">HTML</label>
+            <input type="radio" name="fav_language" id="html" value="html">
+            <br>
+            <label for="css">CSS</label>
+            <input type="radio" name="fav_language" id="css" value="css">
+            <br>
+            <label for="js">JS</label>
+            <input type="radio" name="fav_language" id="js" value="js">
+            <br>
+        </div>
+
+        <div>
+            <label for="code">VSCode</label>
+            <input type="checkbox" name="code" id="code" value="code">
+            <br>
+            <label for="vs">Visual Studio/label>
+            <input type="checkbox" name="vs" id="vs" value="vs">
+            <br>
+            <label for="vim">Vim</label>
+            <input type="checkbox" name="vim" id="vim" value="vim">
+            <br>
+        </div>
+
+        <select name="Verkehrsmittel" id="Verkehrsmittel" multiple>
+            <option value="bus">BUS</option>
+            <option value="auto">Auto</option>
+            <option value="bike">Bike</option>
+            <option value="escooter">E-Scooter</option>
+
+        </select>
+        <button type="submit">Abschicken</button>
+    </form>
+</body>
+</html>
