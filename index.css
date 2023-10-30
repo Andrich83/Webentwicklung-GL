@@ -1,3 +1,15 @@
+:root {
+    --color-primary: magenta;
+    --color-secundary: purple;
+    --text-shadow: 5px 5px 5px #000000;
+    --opaque-bg: rgba(0,0,0,.6);
+}
+
+@font-face {
+    font-family: 'CascadiaCode';
+    src: url('assets/CascadiaCode/CaskaydiaCoveNerdFont-Regular.ttf');
+
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -7,20 +19,39 @@ body {
     flex-direction: column;
     align-items: center;
     /*Background Image*/
-    background-image: url('assets/Spirale.gif');
+    background-image: url('assets/smoke.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Cormorant Garamond', serif;
-    
+    font-family: 'CascadiaCode', serif;
+}
+
+#search {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: none;
+    box-sizing: border-box;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-field {
+    width: 40%;
+    background-color: rgb(217, 218, 214);
+    border: 2px color: rgb(208, 222, 13);
+    border-radius: .5em;
+    font-size: 2rem;
+    outline: none;
 }
 
 #clock {
     font-size: 2rem;
-    color: aliceblue;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    text-shadow: 5px 5px 5px #575b7d;
+    text-shadow: 5px 5px 5px #4c4e4f;
+    color: rgb(208, 222, 13);
 }
 
 .container {
@@ -32,7 +63,7 @@ body {
 }
 
 .box {
-    border: 7px double purple;
+    border: 7px double rgb(219, 219, 55);
     border-radius: 0.7em;
     background-color: rgba(0,0,0,.6);
     padding: 10px;
@@ -41,7 +72,7 @@ body {
 }
 
 .box > h2 {
-    color: magenta;
+    color: rgb(229, 255, 0);
     margin-top: 0;
 }
 
@@ -66,4 +97,35 @@ a:hover {
     font-weight: 500;
     font-size:  1.5em;
     transition: all 1.5s;
+}
+
+[joke-norris] {
+    color: rgb(239, 237, 233);
+    font-size: 1em;
+    border: 1px solid rgb(222, 229, 11);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--opaque-bg);
+    box-shadow: 5px 5px 5px color(yellow);
+    margin-bottom: ;
+}
+
+@media screen and (max-width: 900px) {
+   body {
+    background-image: url(assets/4N1R.gif);
+    height: 100%;
+   } 
+
+   .container {
+    flex-direction: column;
+    align-items: center;    
+   }
+
+   .box {
+    min-width: 50vw;
+   }
+
+   #clock {
+    margin-top: 20px;
+   }
 }
